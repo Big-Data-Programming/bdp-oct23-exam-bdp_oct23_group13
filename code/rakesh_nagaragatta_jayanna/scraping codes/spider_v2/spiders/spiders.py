@@ -6,8 +6,8 @@ import time
 class SpidersSpider(scrapy.Spider):
     name = "spiders"
     
-    df = pd.read_excel('/Users/rakeshnagaragattajayanna/Downloads/stackoverflow_50to100k.xlsx')  # Update the path as needed
-    start_urls = df['activity_link'].iloc[0:].dropna().astype(str).tolist()
+    df = pd.csv('/Users/rakeshnagaragattajayanna/Downloads/profiles_links.csv')  # Update the path as needed
+    start_urls = df['link'].iloc[0:].dropna().astype(str).tolist()
 
     custom_settings = {
         'DOWNLOAD_DELAY': 2,
