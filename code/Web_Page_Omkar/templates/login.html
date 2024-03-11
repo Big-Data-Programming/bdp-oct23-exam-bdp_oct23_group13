@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <style>
+        .error {
+            color: red;
+            text-align: center; /* Centers the error message */
+            margin-top: 10px; /* Adds space above the error message */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="{{ url_for('login') }}" method="post">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Login</button>
+            <div class="links">
+                <a href="#">Forgot password?</a>
+                <a href="#">Sign up</a>
+            </div>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
