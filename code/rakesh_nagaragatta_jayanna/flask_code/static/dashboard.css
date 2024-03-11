@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?cs=srgb&dl=pexels-pixabay-373076.jpg&fm=jpg&_gl=1*vw15n8*_ga*MzA3ODEzODY5LjE3MDk1NzAyMDI.*_ga_8JE65Q40S6*MTcwOTU4Mjk1NC4yLjEuMTcwOTU4Mjk2MS4wLjAuMA.jpg' ); /* Replace with the correct path to your image */
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default margin to ensure full coverage */
+    font-family: Arial, sans-serif; /* Set a default font family */
+
+  
+}
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+} */
+
+.dashboard-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.score-section, .feedback-section {
+    margin-bottom: 20px;
+}
+
+.dashboard-container{
+    text-align: center ;
+}
+.menu{
+    text-align: left;
+}
+.view_candidate{
+   position: absolute;
+   top: 60px;
+   right: 300px;
+   margin: 10px;
+   color: blue;
+}

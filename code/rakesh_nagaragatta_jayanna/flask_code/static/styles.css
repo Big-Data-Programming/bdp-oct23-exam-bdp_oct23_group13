@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg' ); /* Replace with the correct path to your image */
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* Center the background image */
+    margin: 0; /* Remove default margin to ensure full coverage */
+    font-family: Arial, sans-serif; /* Set a default font family */
+
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('https://www.istockphoto.com/de/foto/automatisierung-industrielle-gesch%C3%A4ftsprozess-workflow-optimierung-gm1280048451-378473678'); 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    /* Apply blur effect */
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+./* Add this CSS to your styles.css file */
+
+/* Style the container for the login form */
+.login-container {
+    background: #FFFFFF;
+    padding: 40px;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style all text inputs the same way */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #DDD;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    border-radius: 4px; /* Rounded borders */
+}
+
+/* Style the login button */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; /* Add some space above the button */
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Change the button color slightly when hovered over */
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the links for 'Forgot password?' and 'Sign up' */
+.links {
+    margin-top: 20px;
+    color: #007BFF;
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+.dashboard-container{
+    height: 400px;
+}
