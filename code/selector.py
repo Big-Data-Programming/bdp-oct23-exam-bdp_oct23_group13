@@ -20,26 +20,10 @@ CLUSTERS_DICT = {
     'Data Scientist': 1,
     'Python Web Developer': 2,
     'Java Developer': 0,
-    'C++ Developer:' 2,
-    'Solutions Architect:' 0,
+    'C++ Developer': 2,
+    'Solutions Architect': 0,
     'AI Engineer': 2,   
 }
-
-conn = sqlite3.connect('instance/Candidate_Requirements.db')
-
-database_path = 'candidate_data.db'
-
-# Create a connection to the SQLite database
-conn_data = sqlite3.connect(database_path)
-
-# SQL query to select all data from the training data table
-query_unseen = "SELECT * FROM unseen_data"
-
-# Load data from the SQL query into a pandas DataFrame
-df_unseen = pd.read_sql_query(query_unseen, conn)
-
-# Close the connection to the database
-conn_data.close()
 
 def convert_k_to_num(value):
     if isinstance(value, str) and value.lower().endswith('k'):
@@ -68,6 +52,21 @@ def convert_to_months(s):
 
 
 def get_data(role, number_of_condidates, selected_cadidates):
+    conn = sqlite3.connect('instance/Candidate_Requirements.db')
+
+    database_path = 'candidate_data.db'
+
+    # Create a connection to the SQLite database
+    conn_data = sqlite3.connect(database_path)
+
+    # SQL query to select all data from the training data table
+    query_unseen = "SELECT * FROM unseen_data"
+
+    # Load data from the SQL query into a pandas DataFrame
+    df_unseen = pd.read_sql_query(query_unseen, conn_data)
+
+    # Close the connection to the database
+    conn_data.close()
     #Cleaning the data
     df_unseen = df_unseen[~df_unseen['user_id'].isin(selected_cadidates)]
     df_unseen['name'] = df_unseen['name'].str.replace('\n','')
@@ -273,8 +272,6 @@ def get_data(role, number_of_condidates, selected_cadidates):
         df_scaled2 = pd.DataFrame(scaled2, columns=['member_since_in_months_st','total_requirements_satisfied_st'], index=df_unseen.index)
         df_unseen = pd.concat([df_unseen, df_scaled2], axis=1)
         st_columns1 = [i for i in df_unseen.columns if i.endswith('_st')]
-
-        import pickle
 
         # Path to the pickle file
         pickle_file_path = 'model_pickle_files/ai-engineer-model.pkl'
