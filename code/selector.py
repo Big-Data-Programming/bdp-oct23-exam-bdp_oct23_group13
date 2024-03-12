@@ -16,6 +16,7 @@ warnings.filterwarnings('ignore')
 
 np.random.seed(42)
 
+#storing the selected cluster number after training and test
 CLUSTERS_DICT = {
     'Data Scientist': 1,
     'Python Web Developer': 2,
@@ -25,6 +26,7 @@ CLUSTERS_DICT = {
     'AI Engineer': 2,   
 }
 
+#Function to convert values like 132k and 2.3m to 132,000 and 2,300,000
 def convert_k_to_num(value):
     if isinstance(value, str) and value.lower().endswith('k'):
         return float(value[:-1]) * 1000
@@ -33,7 +35,7 @@ def convert_k_to_num(value):
     else:
         return float(value)
     
-
+#converting values like 10 years, 8 months to 128
 def convert_to_months(s):
     years, months, days = 0, 0, 0
     
@@ -50,7 +52,7 @@ def convert_to_months(s):
     
     return total_months
 
-
+#Function to get the top comments
 def get_data(role, number_of_condidates, selected_cadidates):
     conn = sqlite3.connect('instance/Candidate_Requirements.db')
 
