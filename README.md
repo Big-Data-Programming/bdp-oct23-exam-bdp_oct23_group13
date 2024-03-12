@@ -1,6 +1,6 @@
 # Doodle, hushhush Recruiter
 
-1. Project Structure and basic gist
+-- Project Structure and basic gist
   - Data Fetching and Preparation:
   1. Fetch user profile links via API calls.
   2. Perform web scraping on fetched data.
@@ -27,13 +27,13 @@
   2. Evaluate answers using OpenAI API.
   3. Provide feedback based on coding test evaluation.
    
-3. Initial Setup Procedure 
+-- Initial Setup Procedure 
     - Navigate to the directory where you want to set up this project.
     - git clone this project using the following command git clone https://github.com/Big-Data-Programming/bdp-oct23-exam-              bdp_oct23_group13.git
     - To install all the requirements run the below command. Execute this command whenever there is a change in requirements.txt file.
       On Mac/Win: pip install -r requirements.txt
 
-4. Product Application Flow
+-- Product Application Flow
 
     - Navigate to the app.py file and run it
     - While running app.py, the code provides a localhost url, run the url in the browser.
