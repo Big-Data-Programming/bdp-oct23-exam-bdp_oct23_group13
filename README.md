@@ -34,7 +34,6 @@
       On Mac/Win: pip install -r requirements.txt
 
 -- Product Application Flow
-
     - Navigate to the app.py file and run it
     - While running app.py, the code provides a localhost url, run the url in the browser.
     - For accessing the login page, navigate to https://{url}/loginpage. Enter static login credentials either for Recruiting Manager or HR         Manager.
