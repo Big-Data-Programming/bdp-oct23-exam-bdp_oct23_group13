@@ -36,12 +36,12 @@
 -- Product Application Flow
     - Navigate to the app.py file and run it
     - While running app.py, the code provides a localhost url, run the url in the browser.
-    - For accessing the login page, navigate to https://{url}/loginpage. Enter static login credentials either for Recruiting Manager or HR         Manager.
-    - For Recruiting Manager, you will be redirected to https://{url}/dashboard. For HR Manager, you will be redirected to https://{url}/          dashboard2.
-    - Suppose you are in the Recruiter manager dashboard, user selects the Candidate requirements based on Job Role, Years of Experience and       Number of Candidates required.
-    - Now, in the HR Manager dashboard, user views the Latest Job Requirement, with a button prompting Eligible Candidate List. Upon               pressing the button, user is redirected to page displaying Eligible Candidate List.
+    - For accessing the login page, navigate to https://{url}/loginpage. Enter static login credentials either for Recruiting Manager or HR Manager.
+    - For Recruiting Manager, you will be redirected to https://{url}/dashboard. For HR Manager, you will be redirected to https://{url}/dashboard2.
+    - Suppose you are in the Recruiter manager dashboard, user selects the Candidate requirements based on Job Role, Years of Experience and Number of Candidates required.
+    - Now, in the HR Manager dashboard, user views the Latest Job Requirement, with a button prompting Eligible Candidate List. Upon pressing the button, user is redirected to page displaying Eligible Candidate List.
     - In the Eligible Candidate List page, Send Email option is avaialble to all eligible candidates.
-    - Selected candidates will recieve an email, which contains the link to a coding challenge which has an expiry window of 48 Hours. After       submitting the coding challenge it will redirect the user to the login page.
+    - Selected candidates will recieve an email, which contains the link to a coding challenge which has an expiry window of 48 Hours. After submitting the coding challenge it will redirect the user to the login page.
     - When the candidate accesses the coding challenge link, three coding questions are displayed for the candidate to solve.
     - Candidates who pass this challenge will receive an email for further round and those who fail will get a page diplaying rejection.
     - In the Recruiting Manager's dashboard, for each candidate, feedback for each coding question is displayed.
