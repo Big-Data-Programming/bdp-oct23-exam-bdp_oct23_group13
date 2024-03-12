@@ -28,20 +28,20 @@
   3. Provide feedback based on coding test evaluation.
    
 -- Initial Setup Procedure 
-    - Navigate to the directory where you want to set up this project.
-    - git clone this project using the following command git clone https://github.com/Big-Data-Programming/bdp-oct23-exam-              bdp_oct23_group13.git
-    - To install all the requirements run the below command. Execute this command whenever there is a change in requirements.txt file.
-      On Mac/Win: pip install -r requirements.txt
+   - Navigate to desired directory for project setup.
+  1. Clone project using: git clone https://github.com/Big-Data-Programming/bdp-oct23-exam-bdp_oct23_group13.git
+  2. Install requirements by running: pip install -r requirements.txt
+      - Execute this command whenever requirements.txt changes.
 
 -- Product Application Flow
-    - Navigate to the app.py file and run it
-    - While running app.py, the code provides a localhost url, run the url in the browser.
-    - For accessing the login page, navigate to https://{url}/loginpage. Enter static login credentials either for Recruiting Manager or HR Manager.
-    - For Recruiting Manager, you will be redirected to https://{url}/dashboard. For HR Manager, you will be redirected to https://{url}/dashboard2.
-    - Suppose you are in the Recruiter manager dashboard, user selects the Candidate requirements based on Job Role, Years of Experience and Number of Candidates required.
-    - Now, in the HR Manager dashboard, user views the Latest Job Requirement, with a button prompting Eligible Candidate List. Upon pressing the button, user is redirected to page displaying Eligible Candidate List.
-    - In the Eligible Candidate List page, Send Email option is avaialble to all eligible candidates.
-    - Selected candidates will recieve an email, which contains the link to a coding challenge which has an expiry window of 48 Hours. After submitting the coding challenge it will redirect the user to the login page.
-    - When the candidate accesses the coding challenge link, three coding questions are displayed for the candidate to solve.
-    - Candidates who pass this challenge will receive an email for further round and those who fail will get a page diplaying rejection.
-    - In the Recruiting Manager's dashboard, for each candidate, feedback for each coding question is displayed.
+  1. Run app.py file.
+  2. Open the localhost URL provided after running app.py in a browser.
+  3. Access the login page at https://{url}/loginpage using static login credentials for Recruiting Manager or HR Manager.
+  4. Upon logging in, Recruiting Manager is redirected to https://{url}/dashboard and HR Manager to https://{url}/dashboard2.
+  5. In the Recruiting Manager dashboard, select candidate requirements based on Job Role, Years of Experience, and Number of Candidates required.
+  6. In the HR Manager dashboard, view the Latest Job Requirement and access the Eligible Candidate List through a button.
+  7. On the Eligible Candidate List page, an option to send emails to all eligible candidates is available.
+  8. Selected candidates receive an email with a link to a coding challenge, valid for 48 hours. After submission, candidates are redirected to the login page.
+  9. Accessing the coding challenge link displays three coding questions for the candidate to solve.
+  10. Candidates who pass the challenge receive an email for further rounds, while failed candidates receive a rejection page.
+  11. In the Recruiting Manager's dashboard, feedback for each coding question is displayed for each candidate.
